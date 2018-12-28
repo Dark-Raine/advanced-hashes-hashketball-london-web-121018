@@ -7,7 +7,11 @@ def game_hash
       :players =>{
         "Alan Anderson" =>{
           :number => 0,
+<<<<<<< HEAD
           :shoe => 16,
+=======
+          :Shoe => 16,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 22,
           :rebounds => 12,
           :assists => 12,
@@ -17,7 +21,11 @@ def game_hash
         },
         "Reggie Evans" =>{
           :number => 30,
+<<<<<<< HEAD
           :shoe => 14,
+=======
+          :Shoe => 14,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	12,
           :rebounds => 12,
           :assists => 12,
@@ -27,7 +35,11 @@ def game_hash
         },
         "Brook Lopez" =>{
           :number => 11,
+<<<<<<< HEAD
           :shoe => 17,
+=======
+          :Shoe => 17,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	17,
           :rebounds => 19,
           :assists => 10,
@@ -37,7 +49,11 @@ def game_hash
         },
         "Mason Plumlee" =>{
           :number => 1,
+<<<<<<< HEAD
           :shoe => 19,
+=======
+          :Shoe => 19,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	26,
           :rebounds => 12,
           :assists => 6,
@@ -47,7 +63,11 @@ def game_hash
         },
         "Jason Terry" =>{
           :number => 31,
+<<<<<<< HEAD
           :shoe => 15,
+=======
+          :Shoe => 15,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	19,
           :rebounds => 2,
           :assists => 2,
@@ -63,7 +83,11 @@ def game_hash
       :players =>{
         "Jeff Adrien" =>{
           :number => 4,
+<<<<<<< HEAD
           :shoe => 18,
+=======
+          :Shoe => 18,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 10,
           :rebounds => 1,
           :assists => 1,
@@ -73,7 +97,11 @@ def game_hash
         },
         "Bismak Biyombo" =>{
           :number => 0,
+<<<<<<< HEAD
           :shoe => 16,
+=======
+          :Shoe => 16,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	12,
           :rebounds => 4,
           :assists => 7,
@@ -83,7 +111,11 @@ def game_hash
         },
         "DeSagna Diop" =>{
           :number => 2,
+<<<<<<< HEAD
           :shoe => 14,
+=======
+          :Shoe => 14,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	24,
           :rebounds => 12,
           :assists => 12,
@@ -93,7 +125,11 @@ def game_hash
         },
         "Ben Gordon" =>{
           :number => 8,
+<<<<<<< HEAD
           :shoe => 15,
+=======
+          :Shoe => 15,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	33,
           :rebounds => 3,
           :assists => 2,
@@ -103,7 +139,11 @@ def game_hash
         },
         "Brendan Haywood" =>{
           :number => 33,
+<<<<<<< HEAD
           :shoe => 15,
+=======
+          :Shoe => 15,
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
           :points => 	6,
           :rebounds => 12,
           :assists => 12,
@@ -146,7 +186,11 @@ def shoe_size(player)
         tv.each do |name, stat|
           if name == player
             stat.each do |attribute, value|
+<<<<<<< HEAD
               if attribute == :shoe
+=======
+              if attribute == :Shoe
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
                 points = value
               end
             end
@@ -161,6 +205,7 @@ end
 def team_colors(team)
   colors = []
   game_hash.each do |side, teams|
+<<<<<<< HEAD
       if teams[:team_name] == team
         teams.each do |td, tv|
           if td == :colors
@@ -229,4 +274,22 @@ end
 def big_shoe_rebounds
   return 12
 
+=======
+
+    teams.each do |td, tv|
+      if td == :team_name
+        if tv == team
+          if td == :colors
+            tv.each do |color|
+              colors << color
+            end
+          end
+        end
+        
+      end
+    
+    end
+  end
+  colors
+>>>>>>> 42dd7c81cba074556e4a4afc69e6d1e1a8e53996
 end
